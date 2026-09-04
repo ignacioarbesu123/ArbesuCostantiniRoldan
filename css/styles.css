@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+li {
+list-style-type: none;
+}
+a {
+text-decoration: none;
+color: #000;
+}
+img.logo{
+    height: 100px;
+    width: 1300px;
+}
