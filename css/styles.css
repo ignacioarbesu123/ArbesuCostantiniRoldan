@@ -14,3 +14,16 @@ img.logo{
     height: 100px;
     width: 130px;
 }
+.headerhome{
+    display: flex;
+}
+.formhome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.mainhome{
+    display: flex;
+
+}
