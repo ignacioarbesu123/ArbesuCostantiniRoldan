@@ -10,12 +10,20 @@ a {
 text-decoration: none;
 color: #000;
 }
+
+/* reglas para home*/
+
 img.logo{
     height: 100px;
     width: 130px;
 }
-.headerhome{
+header{
     display: flex;
+    justify-content: space-between;
+}
+.buscador{
+    display: flex;
+    align-self: center;
 }
 .formhome{
     display: flex;
@@ -26,4 +34,14 @@ img.logo{
 .mainhome{
     display: flex;
 
+}
+
+/* reglas para register*/
+
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
