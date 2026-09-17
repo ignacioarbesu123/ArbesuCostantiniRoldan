@@ -23,7 +23,7 @@ header{
 }
 .buscador{
     display: flex;
-    align-self: center;
+    align-self: center; 
 }
 .formhome{
     display: flex;
@@ -43,5 +43,27 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 60vh; 
     
+} 
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; 
+} 
+.botondetalle{
+display: inline-block;
+background-color: burlywood;
+color: black;
+padding: 5px 5px; 
+font-weight: bold;
+border: 2px solid black
 }
+section{
+    display:flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+
+} 
