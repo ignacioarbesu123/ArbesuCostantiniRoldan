@@ -10,6 +10,9 @@ a {
 text-decoration: none;
 color: #000;
 }
+body{
+    background-color: #FCF1D0;
+}
 
 /* reglas para home*/
 
@@ -33,7 +36,40 @@ header{
 }
 .mainhome{
     display: flex;
+}
+aside{
+    width: 600px;
+    margin-top: 30px;
+}
+aside nav ul li{
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px 15px 15px 5px;
+}
+section.home{
+    display: flex;
+    flex-wrap: wrap;
 
+}
+article{
+    width: 390px;
+    height: 500px;
+    margin: 15px 15px 15px 15px;
+    border-radius: 10%;
+    border-width: 5px;
+    border-style: groove;
+    border-color: #22396F;
+}
+h2.titulo{
+width: 100%;
+margin: 10px;
+font-size: 50px;
+font-family: Arial, Helvetica, sans-serif;
+}
+article img{
+    width: 100%;
+    height: 350px;
+    border-radius: 10%;
 }
 
 /* reglas para register*/
@@ -63,9 +99,3 @@ padding: 5px 5px;
 font-weight: bold;
 border: 2px solid black
 }
-section{
-    display:flex;
-    flex-wrap: wrap; 
-    justify-content: space-between;
-
-} 
