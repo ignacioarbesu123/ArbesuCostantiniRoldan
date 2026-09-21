@@ -62,9 +62,10 @@ article{
     height: 500px;
     margin: 15px 15px 15px 15px;
     border-radius: 10%;
-    border-width: 5px;
-    border-style: groove;
-    border-color: #040a1a;
+    border-width: 10px;
+    border-style: double;
+    border-color: #0F172A;
+    background-color: white;
 }
 h2.titulo{
 width: 100%;
@@ -98,15 +99,13 @@ article img{
 } 
 .botondetalle{
 display: inline-block;
-background-color: burlywood;
-color: black;
+background-color: #0F172A;
+color: white;
 padding: 5px 5px; 
 font-weight: bold;
 border: 2px solid black
 }
-form{
 
-}
 .categorynav{
 background-color: white;
 }
