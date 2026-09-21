@@ -46,6 +46,8 @@ header a{
 aside{
     width: 600px;
     margin-top: 10px;
+    height: fit-content;
+    background-color: white;
 }
 aside nav ul li{
     font-size: medium;
@@ -104,10 +106,6 @@ color: white;
 padding: 5px 5px; 
 font-weight: bold;
 border: 2px solid black
-}
-
-.categorynav{
-background-color: white;
 }
 .loginregister{
     align-items: center;
