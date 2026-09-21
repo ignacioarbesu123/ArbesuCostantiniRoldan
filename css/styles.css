@@ -23,6 +23,16 @@ img.logo{
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.loginregister{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+ul.loginregister li{
+    margin-right: 15px;
+    align-self: top;
 }
 .buscador{
     display: flex;
