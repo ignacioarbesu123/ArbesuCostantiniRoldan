@@ -23,12 +23,25 @@ img.logo{
 header{
     display: flex;
     justify-content: space-between;
+<<<<<<< HEAD
     background-color: #0F172A;
     color: white;
     padding: 10px 10px;
 }
 header a{
     color:white
+=======
+    align-items: center;
+}
+.loginregister{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+ul.loginregister li{
+    margin-right: 15px;
+    align-self: top;
+>>>>>>> 9c3a36e09a95388755c967320c8c8e18cee3f52b
 }
 .buscador{
     display: flex;
