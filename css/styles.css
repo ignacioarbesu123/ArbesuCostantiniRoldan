@@ -1,65 +1,89 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
 li {
-list-style-type: none;
+    list-style-type: none;
 }
+
 a {
-text-decoration: none;
-color: #000;
+    text-decoration: none;
+    color: #000;
 }
-body{
+
+body {
     background-color: #FCF1D0;
 }
 
 /* reglas para home*/
 
-img.logo{
+img.logo {
     height: 100px;
     width: 130px;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
-    background-color: #0F172A;
+    background-color: #ffe600;
     color: white;
     padding: 10px 10px;
 }
-header a{
-    color:white
+
+header nav a {
+    color: #ffffff;
+    background-color: #1f2351;
+    border-radius: 10%;
+    padding: 10px;
 }
-.buscador{
+
+.loginregister {
+    align-self: center;
+}
+
+.loginregister ul {
     display: flex;
-    align-self: center; 
+    justify-content: space-between;
+    width: 250px;
 }
-.formhome{
+
+.buscador {
+    display: flex;
+    align-self: center;
+}
+
+.formhome {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
 }
-.mainhome{
+
+.mainhome {
     display: flex;
 }
-aside{
+
+aside {
     width: 600px;
     margin-top: 10px;
     height: fit-content;
     background-color: white;
 }
-aside nav ul li{
+
+aside nav ul li {
     font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
     margin: 15px 15px 15px 5px;
 }
-section.home{
+
+section.home {
     display: flex;
     flex-wrap: wrap;
 
 }
-article{
+
+article {
     width: 390px;
     height: 500px;
     margin: 15px 15px 15px 15px;
@@ -69,46 +93,50 @@ article{
     border-color: #0F172A;
     background-color: white;
 }
-h2.titulo{
-width: 100%;
-margin: 10px;
-font-size: 50px;
-font-family: Arial, Helvetica, sans-serif;
+
+h2.titulo {
+    width: 100%;
+    margin: 10px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-article img{
+
+article img {
     width: 100%;
     height: 350px;
     border-radius: 10%;
 }
 
+.botondetalle {
+    display: flex;
+    background-color: #0F172A;
+    color: white;
+    padding: 15px 15px;
+    font-weight: 500;
+    width: 130px;
+    margin-left: 5px;
+    justify-content: center;
+}
+
 /* reglas para register*/
 
-.register{
+.register {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;  
-} 
-.login{
+    height: 60vh;
+}
+
+/* reglas para login*/
+
+.login {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh; 
+    height: 60vh;
     border: #000;
     border-width: 5px;
-} 
-.botondetalle{
-display: inline-block;
-background-color: #0F172A;
-color: white;
-padding: 5px 5px; 
-font-weight: bold;
-border: 2px solid black
-
-}
-.loginregister{
-    align-items: center;
-    display: flex;
+    border-style: dotted;
 }
