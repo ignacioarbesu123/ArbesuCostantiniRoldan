@@ -1,68 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="./css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-   <header>
-        <a href="./index.html"><img class="logo" src="./img/logo.png" alt="logo de la pagina"></a>
-        <form class="buscador" action="search-results.html" method="get"> 
-            <input type="text" name="búsqueda" value="" required>
-            <button type="submit">Buscar</button>
-        </form>
-        <nav class="loginregister">
-        <ul> 
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./login.html">Login</a></li>
-            <li><a href="./register.html">Register</a></li>
-        </ul>
-        </nav>
-    </header>
+  <header>
+    <a href="./index.html"><img class="logo" src="./img/logo.png" alt="logo de la pagina"></a>
+    <form class="buscador" action="search-results.html" method="get">
+      <input type="text" name="búsqueda" value="" required>
+      <button type="submit">Buscar</button>
+    </form>
+    <nav class="loginregister">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./login.html">Login</a></li>
+        <li><a href="./register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
   <section class="cformr">
     <article class="cformr">
       <form class="register" action="./login.html" method="get">
-      <h2>Registrarme</h2>
+        <h2>Registrarme</h2>
         <div class="form">
           <label for="nombre">nombre:</label>
           <input id="nombre" type="text" name="user" placeholder="nombre" required value="">
         </div>
-        
-        <div class="form"> 
+
+        <div class="form">
           <label for="mail">mail:</label>
           <input id="mail" type="email" name="email" placeholder="email" required value="">
         </div>
-        
+
         <div class="form">
           <label for="contraseña">contraseña:</label>
           <input id="contraseña" type="password" name="Contraseña" placeholder="contraseña" required value="">
         </div>
 
-       <div class="form">
+        <div class="form">
           <label for="repetir contraseña">Repetir contraseña:</label>
-          <input id="repetir-contraseña" type="password" name="Contraseña-repetida" placeholder="repite tu contraseña" required value="">
-        </div>  
+          <input id="repetir-contraseña" type="password" name="Contraseña-repetida" placeholder="repite tu contraseña"
+            required value="">
+        </div>
 
         <div class="form">
           <label for="terminos">Acepto términos y condiciones</label>
           <input id="terminos" type="checkbox" name="terminos" required value="">
-        </div> 
+        </div>
 
         <div>
-            <button type="submit" >Registrarme</button>
+          <button type="submit">Registrarme</button>
         </div>
-        
+
         <div>
           <a href="./login.html">Ya tengo cuenta</a>
         </div>
-    </form>
-   </article>
-    
+      </form>
+    </article>
+
   </section>
-    <footer>
-        <p>Ignacio Arbesú, Tomás Costantini Orrego, Facundo Roldán</p>
-    </footer>
+  <footer>
+    <p>Ignacio Arbesú, Tomás Costantini Orrego, Facundo Roldán</p>
+  </footer>
 </body>
+
 </html>

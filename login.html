@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <header>
         <a href="./index.html"><img class="logo" src="./img/logo.png" alt="logo de la pagina"></a>
-        <form class="buscador" action="search-results.html" method="get"> 
+        <form class="buscador" action="search-results.html" method="get">
             <input type="text" name="búsqueda" value="" required>
             <button type="submit">Buscar</button>
         </form>
         <nav class="loginregister">
-        <ul> 
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./login.html">Login</a></li>
-            <li><a href="./register.html">Register</a></li>
-        </ul>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./register.html">Register</a></li>
+            </ul>
         </nav>
     </header>
     <section class="cform">
         <article class="cform">
-        <form class="login" action="./index.html" method="get">
-            <h2>Inicia Sesión</h2>
-        <div class="form"> 
-          <label for="mail">Email:</label>
-          <input id="mail" type="email" name="Email" required placeholder="escribe tu email" value="">
-        </div>
-        
-        <div class="form">
-          <label for="contraseña">Contraseña:</label>
-          <input id="contraseña" type="password" name="pass" required placeholder="escribe tu contraseña" value="">
-        </div> 
+            <form class="login" action="./index.html" method="get">
+                <h2>Inicia Sesión</h2>
+                <div class="form">
+                    <label for="mail">Email:</label>
+                    <input id="mail" type="email" name="Email" required placeholder="escribe tu email" value="">
+                </div>
 
-        <div>
-            <button type="submit">Ingresar</button>
-        </div>  
+                <div class="form">
+                    <label for="contraseña">Contraseña:</label>
+                    <input id="contraseña" type="password" name="pass" required placeholder="escribe tu contraseña"
+                        value="">
+                </div>
 
-        <div>
-            <a href="./register.html">No tengo cuenta</a>
-        </div>
-     </form>
-     </article>
+                <div>
+                    <button type="submit">Ingresar</button>
+                </div>
+
+                <div>
+                    <a href="./register.html">No tengo cuenta</a>
+                </div>
+            </form>
+        </article>
     </section>
 
-<footer>
+    <footer>
         <p>Ignacio Arbesú, Tomás Costantini Orrego, Facundo Roldán</p>
     </footer>
 </body>
+
 </html>

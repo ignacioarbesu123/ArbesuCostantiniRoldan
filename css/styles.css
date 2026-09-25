@@ -83,7 +83,8 @@ aside nav ul li {
     margin: 15px 15px 15px 5px;
     padding-left: 10px;
 }
-aside nav h2{
+
+aside nav h2 {
     margin: 10px;
     font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
@@ -129,11 +130,12 @@ article img {
     width: 130px;
     justify-content: center;
 }
-footer{
+
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#ffe600;
+    background-color: #ffe600;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     height: 200px;
@@ -152,10 +154,12 @@ footer{
     align-items: center;
     height: 500px;
 }
-.register div{
+
+.register div {
     margin: 10px;
-} 
-article.cformr{
+}
+
+article.cformr {
     display: flex;
     align-content: center;
     justify-content: center;
@@ -167,7 +171,7 @@ article.cformr{
     margin: 20px;
 }
 
-section.cformr{
+section.cformr {
     display: flex;
     justify-content: center;
     margin: 80px;
@@ -183,11 +187,13 @@ section.cformr{
     align-items: center;
     height: 500px;
 }
-.login div{
+
+.login div {
     margin: 10px;
 }
-article.cform{
-     display: flex;
+
+article.cform {
+    display: flex;
     align-content: center;
     justify-content: center;
     background-color: white;
@@ -197,41 +203,47 @@ article.cform{
     border-radius: 10px;
     margin: 20px;
 }
-section.cform{
+
+section.cform {
     display: flex;
     justify-content: center;
     margin: 80px;
 }
+
 /* reglas para producto*/
 
-div.producto{
+div.producto {
     display: flex;
 }
-div.reviews{
+
+div.reviews {
     display: flex;
     justify-content: center;
 }
-.reviews article{
+
+.reviews article {
     width: 300px;
     height: 150px;
 }
-section.reviews h2{
-margin-left: 15px;
-margin-top: 20px;
-font-size: 30px;
-font-family: Arial, Helvetica, sans-serif;
+
+section.reviews h2 {
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
-section.imagen{
-display: flex;
-flex-direction: column;
-background-color: #ffffff;
-border: #ffffff;
-margin: 10px 15px 0px;
-padding: 10px;
+section.imagen {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: #ffffff;
+    margin: 10px 15px 0px;
+    padding: 10px;
 }
-section.imagen img{
+
+section.imagen img {
     width: 400px;
     height: 400px;
     align-self: center;
@@ -240,37 +252,43 @@ section.imagen img{
     border-width: 5px;
     margin-bottom: 5px
 }
-section.imagen p{
+
+section.imagen p {
     margin: 3px 0px;
 }
-section.imagen h2.nombredelproducto{
+
+section.imagen h2.nombredelproducto {
     font-size: 35px;
     font-weight: 900;
-    margin: 0px 10px 30px 0px; 
+    margin: 0px 10px 30px 0px;
 }
 
 /* reglas para Search-results*/
-.search-results{
+.search-results {
     display: flex;
-} 
-.resultadoproducto{
+}
+
+.resultadoproducto {
     display: flex;
     flex-wrap: wrap;
 }
-.tituloresults{
+
+.tituloresults {
     margin: 10px;
 }
 
 /* reglas para Category */
-.divcategory{
+.divcategory {
     display: flex;
 }
-.sectioncategory{
+
+.sectioncategory {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.h2beauty{
+
+.h2beauty {
     padding-left: 25px;
     padding-top: 25px;
     font-size: 50px;
@@ -279,45 +297,53 @@ section.imagen h2.nombredelproducto{
 }
 
 
-@media (max-width:768px){
-    header{
-        flex-direction: column;  
-        align-items: center;      
+@media (max-width:768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
     }
-    .buscador{
+
+    .buscador {
         margin: 5vw;
     }
-    .mainhome{
+
+    .mainhome {
         flex-direction: column;
     }
-    div.divcategory{
+
+    div.divcategory {
         flex-direction: column;
     }
-    div.producto{
+
+    div.producto {
         flex-direction: column;
     }
-    main.search-results{
+
+    main.search-results {
         flex-direction: column;
     }
-    aside ul{
-     display: flex;
-     flex-wrap: wrap;
+
+    aside ul {
+        display: flex;
+        flex-wrap: wrap;
     }
-    section.home{
+
+    section.home {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    div.reviews article{
+
+    div.reviews article {
         width: 30vw;
-        height: 40vh;    
-    }
-    
-}
-@media (max-width:480px){
-    article{
-       width: 80vw; 
+        height: 40vh;
     }
 
 }
 
+@media (max-width:480px) {
+    article {
+        width: 80vw;
+    }
+
+}
