@@ -168,13 +168,22 @@ footer{
 main.producto{
     display: flex;
 }
-.reviews{
-    margin-top: 10px;
+div.reviews{
+    display: flex;
+    justify-content: center;
 }
 .reviews article{
     width: 300px;
     height: 150px;
 }
+section.reviews h2{
+margin-left: 15px;
+margin-top: 20px;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
 section.imagen{
 display: flex;
 flex-direction: column;
@@ -195,8 +204,14 @@ section.imagen img{
 section.imagen p{
     margin: 3px 0px;
 }
-section.imagen p.nombredelproducto{
+section.imagen h2.nombredelproducto{
     font-size: 35px;
     font-weight: 900;
     margin: 0px 10px 30px 0px; 
+}
+
+/* reglas para Search-results*/
+
+.search-results{
+    display: flex;
 }
