@@ -243,10 +243,15 @@ section.imagen h2.nombredelproducto{
 }
 
 /* reglas para Search-results*/
-
 .search-results{
     display: flex;
 } 
+.resultadoproducto{
+    display: flex;
+}
+.tituloresults{
+    margin: 10px;
+}
 
 /* reglas para Category */
 .divcategory{
