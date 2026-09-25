@@ -147,6 +147,23 @@ footer{
 }
 .register div{
     margin: 10px;
+} 
+article.cformr{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+section.cformr{
+    display: flex;
+    justify-content: center;
+    margin: 80px;
 }
 
 
@@ -162,7 +179,22 @@ footer{
 .login div{
     margin: 10px;
 }
-
+article.cform{
+     display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+}
+section.cform{
+    display: flex;
+    justify-content: center;
+    margin: 80px;
+}
 /* reglas para producto*/
 
 main.producto{
@@ -214,4 +246,4 @@ section.imagen h2.nombredelproducto{
 
 .search-results{
     display: flex;
-}
+} 
