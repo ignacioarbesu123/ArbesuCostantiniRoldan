@@ -140,6 +140,7 @@ footer{
     margin-top: 20px;
     font-size: 30px;
     color: #0F172A;
+    padding: 3px;
 }
 
 /* reglas para register*/
@@ -254,6 +255,7 @@ section.imagen h2.nombredelproducto{
 } 
 .resultadoproducto{
     display: flex;
+    flex-wrap: wrap;
 }
 .tituloresults{
     margin: 10px;
@@ -266,6 +268,7 @@ section.imagen h2.nombredelproducto{
 .sectioncategory{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .h2beauty{
     padding-left: 25px;
@@ -274,3 +277,47 @@ section.imagen h2.nombredelproducto{
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
 }
+
+
+@media (max-width:768px){
+    header{
+        flex-direction: column;  
+        align-items: center;      
+    }
+    .buscador{
+        margin: 5vw;
+    }
+    .mainhome{
+        flex-direction: column;
+    }
+    div.divcategory{
+        flex-direction: column;
+    }
+    div.producto{
+        flex-direction: column;
+    }
+    main.search-results{
+        flex-direction: column;
+    }
+    aside ul{
+     display: flex;
+     flex-wrap: wrap;
+    }
+    section.home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div.reviews article{
+        width: 30vw;
+        height: 40vh;    
+    }
+    
+}
+@media (max-width:480px){
+    article{
+       width: 80vw; 
+    }
+
+}
+
