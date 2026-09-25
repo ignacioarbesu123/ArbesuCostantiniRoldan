@@ -17,7 +17,7 @@ body {
     background-color: #FCF1D0;
 }
 
-/* reglas para home*/
+/* reglas para home, header y footer*/
 
 img.logo {
     height: 100px;
@@ -66,7 +66,7 @@ header nav a {
 }
 
 aside {
-    width: 600px;
+    min-width: 200px;
     margin-top: 10px;
     height: fit-content;
     background-color: white;
@@ -75,6 +75,12 @@ aside {
 aside nav ul li {
     font-size: medium;
     margin: 15px 15px 15px 5px;
+    padding-left: 10px;
+}
+aside nav h2{
+    margin: 10px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 section.home {
@@ -87,9 +93,10 @@ article {
     width: 390px;
     height: 500px;
     margin: 15px 15px 15px 15px;
-    border-radius: 10%;
-    border-width: 10px;
-    border-style: double;
+    padding: 15px;
+    border-radius: 5%;
+    border-width: 5px;
+    border-style: solid;
     border-color: #0F172A;
     background-color: white;
 }
@@ -114,8 +121,19 @@ article img {
     padding: 15px 15px;
     font-weight: 500;
     width: 130px;
-    margin-left: 5px;
     justify-content: center;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#ffe600;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    height: 200px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #0F172A;
 }
 
 /* reglas para register*/
@@ -125,8 +143,12 @@ article img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 500px;
 }
+.register div{
+    margin: 10px;
+}
+
 
 /* reglas para login*/
 
@@ -135,8 +157,46 @@ article img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
-    border: #000;
+    height: 500px;
+}
+.login div{
+    margin: 10px;
+}
+
+/* reglas para producto*/
+
+main.producto{
+    display: flex;
+}
+.reviews{
+    margin-top: 10px;
+}
+.reviews article{
+    width: 300px;
+    height: 150px;
+}
+section.imagen{
+display: flex;
+flex-direction: column;
+background-color: #ffffff;
+border: #ffffff;
+margin: 10px 15px 0px;
+padding: 10px;
+}
+section.imagen img{
+    width: 400px;
+    height: 400px;
+    align-self: center;
+    border: #0F172A;
+    border-style: solid;
     border-width: 5px;
-    border-style: dotted;
+    margin-bottom: 5px
+}
+section.imagen p{
+    margin: 3px 0px;
+}
+section.imagen p.nombredelproducto{
+    font-size: 35px;
+    font-weight: 900;
+    margin: 0px 10px 30px 0px; 
 }

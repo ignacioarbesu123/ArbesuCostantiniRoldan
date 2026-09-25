@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-   <header class="headerhome">
+   <header>
         <a href="./index.html"><img class="logo" src="./img/logo.png" alt="logo de la pagina"></a>
         <form class="buscador" action="search-results.html" method="get"> 
             <input type="text" name="búsqueda" value="" required>
@@ -22,40 +22,42 @@
         </nav>
     </header>
 
-    <form class="register" action="./login.html" method="get">
-        
+    <form class="register" action="./index.html" method="get">
         <div class="form">
           <label for="nombre">nombre:</label>
-          <input id="nombre" type="text" name="user" value="">
+          <input id="nombre" type="text" name="user" placeholder="nombre" required value="">
         </div>
         
         <div class="form"> 
           <label for="mail">mail:</label>
-          <input id="mail" type="mail" name="mail" value="">
+          <input id="mail" type="email" name="email" placeholder="email" required value="">
         </div>
         
         <div class="form">
           <label for="contraseña">contraseña:</label>
-          <input id="contraseña" type="password" name="pass" value="">
+          <input id="contraseña" type="password" name="pass" placeholder="contraseña" required value="">
         </div>
 
        <div class="form">
           <label for="repetir contraseña">Repetir contraseña:</label>
-          <input id="repetir contraseña" type="password" name="pass" value="">
+          <input id="repetir contraseña" type="password" name="pass" placeholder="repite tu contraseña" required value="">
         </div>  
 
         <div class="form">
           <label for="terminos">Acepto términos y condiciones</label>
-          <input id="terminos" type="checkbox" name="terminos" required>
+          <input id="terminos" type="checkbox" name="terminos" required value="">
         </div> 
 
         <div>
+            <button type="submit" >Registrarme</button>
+        </div>
+        
+        <div>
           <a href="./login.html">Ya tengo cuenta</a>
         </div>
-
-        <div>
-            <button type="submit">Registrarme</button>
-        </div>
     </form>
+    <footer>
+        <p>Ignacio Arbesú, Tomás Costantini Orrego, Facundo Roldán</p>
+    </footer>
 </body>
 </html>
