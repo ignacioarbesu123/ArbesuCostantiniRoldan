@@ -215,3 +215,18 @@ section.imagen h2.nombredelproducto{
 .search-results{
     display: flex;
 }
+
+/* reglas para Category */
+.divcategory{
+    display: flex;
+}
+.sectioncategory{
+    display: flex;
+}
+.h2beauty{
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 100%;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
