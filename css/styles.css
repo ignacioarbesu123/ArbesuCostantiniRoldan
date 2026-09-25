@@ -30,6 +30,9 @@ header {
     background-color: #ffe600;
     color: white;
     padding: 10px 10px;
+    border-bottom: #0F172A;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
 }
 
 header nav a {
@@ -70,6 +73,9 @@ aside {
     margin-top: 10px;
     height: fit-content;
     background-color: white;
+    border: #0F172A;
+    border-style: solid;
+    border-width: 2px;
 }
 
 aside nav ul li {
@@ -197,7 +203,7 @@ section.cform{
 }
 /* reglas para producto*/
 
-main.producto{
+div.producto{
     display: flex;
 }
 div.reviews{
