@@ -8,12 +8,14 @@ let urlCategories = "https://dummyjson.com/products/categories"
 //validador de caracteres del buscador
 buscador.addEventListener('submit', function(event){
     event.preventDefault();
-    if(inpBuscar.value == "" || inpBuscar.value.length < 3){
-        alert("Tenés que escribir algo con más de 3 caracteres")
+    if (inpBuscar.value == ""){
+        alert("El campo de busqueda no puede estar vacio")
+    }else if(inpBuscar.value == "" || inpBuscar.value.length < 3) {
+        alert("Tenés que escribir algo con al menos 3 caracteres")
     }else{
-        this.submit
+        this.submit()
     }
-})
+});
 
 //api para menú de navegación lateral
 fetch(urlCategories)
@@ -26,16 +28,16 @@ fetch(urlCategories)
     
 
     for (let i = 0; i < category.length; i++){
-        ulCategory.innerHTML +=
-        `
+        ulCategory.innerHTML += `
+
         <li>
-        <a href="category.html?name=${category[i].name}">
+            <a href="./category.html?name=${category[i].slug}">
             ${category[i].name}
-        </a>
+            </a>
         </li>
-        `
+        `;
     }
 })
 .catch(function(e){
     console.log("error:"+e)
-})
+    })
