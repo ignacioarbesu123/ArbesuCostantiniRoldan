@@ -60,7 +60,7 @@ fetch(urlGroceries)
                     <h3>${productosGroceries[i].title}</h3>
                     <p>${productosGroceries[i].description}</p>
                     <p>$${productosGroceries[i].price}</p>
-                    <a href="./product.html?id=${productosGroceries[i].id}" class="botondetalle">Ver detalle</a>
+                    <a href="./producto.html?id=${productosGroceries[i].id}" class="botondetalle">Ver detalle</a>
                 </article>
 
             `;
@@ -90,7 +90,7 @@ fetch(urlSmartphones)
                     <h3>${productosSmartphones[i].title}</h3>
                     <p>${productosSmartphones[i].description}</p>
                     <p>$${productosSmartphones[i].price}</p>
-                    <a href="./product.html?id=${productosSmartphones[i].id}" class="botondetalle">Ver detalle</a>
+                    <a href="./producto.html?id=${productosSmartphones[i].id}" class="botondetalle">Ver detalle</a>
                 </article>
             `;
             }
