@@ -12,21 +12,26 @@ fetch(url)
     })
     .then(function (data) {
         console.log(data)
+        let tagis = ""
+        for (let i = 0; i < data.tags.length; i++) {
+            
+            tagis +=
+            `<p>${data.tags[i]}</p><br>`
+            
+        }
         main.innerHTML = `
   <section class="imagen">
         <h2>${data.title}</h2>
         <p>${data.brand}</p>
         <p>${data.description}</p>
         <p>${data.price}</p>
-        <img class="nombredelproducto" src=${data.images}} alt="foto producto mas vendido 1">
+        <img class="nombredelproducto" src="${data.images}"gi alt="foto producto mas vendido 1">
         <a href="./category.html?name=${data.category}">
          ${data.category}
         </a>
         <p>${data.stock}</p>
-        <p>${data.tags[0]}</p>
-        <p>${data.tags[1]}</p>
-        <p>${data.tags[2]}</p>
-  </section>
+        ${tagis}
+    </section>
   <section class="reviews">
                 <h2>Reseñas de Clientes</h2>
                 <div class="reviews">
