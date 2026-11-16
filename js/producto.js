@@ -21,11 +21,11 @@ fetch(url)
         }
         main.innerHTML = `
   <section class="imagen">
-        <h2>${data.title}</h2>
+        <h2 class="nombredelproducto">${data.title}</h2>
         <p>${data.brand}</p>
         <p>${data.description}</p>
         <p>${data.price}</p>
-        <img class="nombredelproducto" src="${data.images}"gi alt="foto producto mas vendido 1">
+        <img class="nombredelproducto" src="${data.images}" alt="foto producto mas vendido 1">
         <a href="./category.html?name=${data.category}">
          ${data.category}
         </a>

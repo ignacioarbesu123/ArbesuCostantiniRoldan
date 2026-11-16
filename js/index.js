@@ -4,6 +4,8 @@ let buscador = document.querySelector(".buscador")
 let inpBuscar = document.querySelector(".inpBuscar")
 let ulCategory = document.querySelector(".ulCategory")
 let urlCategories = "https://dummyjson.com/products/categories";
+let seccionSmartphones = document.querySelector(".seccionSmartphones")
+let urlSmartphones = "https://dummyjson.com/products/category/smartphones";
 
 //validador de caracteres del buscador
 buscador.addEventListener('submit', function(event){
@@ -72,9 +74,6 @@ fetch(urlGroceries)
 
 
 // seccion 2 del home: smartphones
-let seccionSmartphones = document.querySelector(".seccionSmartphones")
-let urlSmartphones = "https://dummyjson.com/products/category/smartphones";
-
 
 fetch(urlSmartphones)
 .then(function (res){
