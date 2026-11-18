@@ -6,10 +6,9 @@ let pSaludo = document.querySelector(".textoSaludo")
 let liLogout = document.querySelector(".liLogout")
 
 if (email != null) {
-    pSaludo.innerText = "Bienvenido:" + email;
+    pSaludo.innerText = "Bienvenido: " + email;
     liLogin.style.display = "none";
     liRegister.style.display = "none";
-    liLogout.innerHTML = '<a href="">Log out</a>'
 
 } else { 
     liSaludo.style.display = "none"
