@@ -2,8 +2,6 @@ let queryString = location.search
 let queryStringObj = new URLSearchParams(queryString)
 let buscador = document.querySelector(".buscador")
 let inpBuscar = document.querySelector(".inpBuscar")
-let ulCategory = document.querySelector(".ulCategory")
-let urlCategories = "https://dummyjson.com/products/categories";
 let seccionSmartphones = document.querySelector(".seccionSmartphones")
 let urlSmartphones = "https://dummyjson.com/products/category/smartphones";
 
@@ -18,31 +16,6 @@ buscador.addEventListener('submit', function(event){
         this.submit()
     }
 });
-
-//api para menú de navegación lateral
-fetch(urlCategories)
-.then(function(res){
-    return res.json()
-})
-.then(function(data){
-    const category = data
-    console.log(category);
-    
-
-    for (let i = 0; i < category.length; i++) {
-        ulCategory.innerHTML += `
-
-        <li>
-            <a href="./category.html?name=${category[i].slug}">
-            ${category[i].name}
-            </a>
-        </li>
-        `;
-    }
-})
-.catch(function(e){
-    console.log("error:"+e)
-    }); 
 
 // seccion 1 del home: groceries
 let seccionGroceries = document.querySelector(".seccionGroceries"); 

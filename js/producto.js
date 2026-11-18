@@ -1,7 +1,6 @@
 let main = document.querySelector("#main")
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString)
-let urlCategories = "https://dummyjson.com/products/categories";
 let numid = queryStringObj.get("id")
 let url = "https://dummyjson.com/products/"+numid
 console.log(location.href)
