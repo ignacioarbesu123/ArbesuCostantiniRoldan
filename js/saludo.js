@@ -2,17 +2,16 @@ let email = localStorage.getItem("email")
 let liLogin = document.querySelector(".liLogin")
 let liRegister = document.querySelector(".liRegister")
 let liSaludo = document.querySelector(".liSaludo")
-let liLogout = document.querySelector(".textoSaludo")
+let pSaludo = document.querySelector(".textoSaludo")
+let liLogout = document.querySelector(".liLogout")
 
 if (email != null) {
-    textoSaludo.Innertext = "Bienvenido" + email;
+    pSaludo.innerText = "Bienvenido:" + email;
     liLogin.style.display = "none";
     liRegister.style.display = "none";
+    liLogout.innerHTML = '<a href="">Log out</a>'
+
 } else { 
     liSaludo.style.display = "none"
     liLogout.style.display = "none"
-
-
-
-    
 }

@@ -16,7 +16,19 @@ fetch(url)
         for (let i = 0; i < data.tags.length; i++) {
             
             tagis +=
-            `<p>${data.tags[i]}</p><br>`
+            `<li>${data.tags[i]}</li>`
+            
+        }
+        let reseñas = ""
+        for (let i = 0; i < data.reviews.length; i++) {
+            reseñas +=
+            `<article>
+                        <p>${data.reviews[i].rating}</p>
+                        <p>${data.reviews[i].comment}</p>
+                        <p>${data.reviews[i].date}</p>
+                        <p>${data.reviews[i].reviewerName}</p>
+            </article>`
+
             
         }
         main.innerHTML = `
@@ -25,34 +37,17 @@ fetch(url)
         <p>${data.brand}</p>
         <p>${data.description}</p>
         <p>${data.price}</p>
-        <img class="nombredelproducto" src="${data.images}" alt="foto producto mas vendido 1">
+        <img class="nombredelproducto" src="${data.images[0]}" alt="foto producto mas vendido 1">
         <a href="./category.html?name=${data.category}">
          ${data.category}
         </a>
         <p>${data.stock}</p>
-        ${tagis}
+        <ul>${tagis}</ul>
     </section>
   <section class="reviews">
                 <h2>Reseñas de Clientes</h2>
                 <div class="reviews">
-                    <article>
-                        <p>${data.reviews[0].rating}</p>
-                        <p>${data.reviews[0].comment}</p>
-                        <p>${data.reviews[0].date}</p>
-                        <p>${data.reviews[0].reviewerName}</p>
-                    </article>
-                    <article>
-                        <p>${data.reviews[1].rating}</p>
-                        <p>${data.reviews[1].comment}</p>
-                        <p>${data.reviews[1].date}</p>
-                        <p>${data.reviews[1].reviewerName}</p>
-                    </article>
-                    <article>
-                        <p>${data.reviews[2].rating}</p>
-                        <p>${data.reviews[2].comment}</p>
-                        <p>${data.reviews[2].date}</p>
-                        <p>${data.reviews[2].reviewerName}</p>
-                    </article>
+                    ${reseñas}
                 </div>
             </section>`
     })
