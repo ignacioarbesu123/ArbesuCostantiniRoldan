@@ -1,4 +1,6 @@
-let email = localStorage.getItem("email")
+let usuario = localStorage.getItem("usuario")
+let usuarioRecuperado = JSON.parse(usuario)
+let email = usuarioRecuperado.email
 let liLogin = document.querySelector(".liLogin")
 let liRegister = document.querySelector(".liRegister")
 let liSaludo = document.querySelector(".liSaludo")
