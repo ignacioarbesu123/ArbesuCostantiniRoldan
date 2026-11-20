@@ -1,10 +1,22 @@
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let terminoBuscado = queryStringObj.get("busqueda");
-
 let tituloBusqueda = document.querySelector(".tituloBusqueda");
 let seccionResultados = document.querySelector(".resultadoproducto");
 let urlBusqueda = "https://dummyjson.com/products/search?q=" + terminoBuscado;
+let buscador = document.querySelector(".buscador")
+let inpBuscar = document.querySelector(".inpBuscar")
+
+buscador.addEventListener('submit', function(event){
+    event.preventDefault();
+    if (inpBuscar.value == ""){
+        alert("El campo de busqueda no puede estar vacio")
+    }else if(inpBuscar.value == "" || inpBuscar.value.length < 3) {
+        alert("Tenés que escribir algo con al menos 3 caracteres")
+    }else{
+        this.submit()
+    }
+});
 
 fetch(urlBusqueda)
     .then(function (res) {

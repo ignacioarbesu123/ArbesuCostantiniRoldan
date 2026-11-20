@@ -4,7 +4,19 @@ let catnumid = catqueryStringObj.get("name")
 let apiurlcategory = "https://dummyjson.com/products/category/"+catnumid
 let catsection = document.querySelector(".sectioncategory")
 let cath2 = document.querySelector(".h2beauty")
-cath2.innerText = catnumid
+let buscador = document.querySelector(".buscador")
+let inpBuscar = document.querySelector(".inpBuscar")
+
+buscador.addEventListener('submit', function(event){
+    event.preventDefault();
+    if (inpBuscar.value == ""){
+        alert("El campo de busqueda no puede estar vacio")
+    }else if(inpBuscar.value == "" || inpBuscar.value.length < 3) {
+        alert("Tenés que escribir algo con al menos 3 caracteres")
+    }else{
+        this.submit()
+    }
+});
 
 fetch(apiurlcategory)
 .then(function(res){
@@ -31,3 +43,4 @@ fetch(apiurlcategory)
     console.log("error:"+e)
 });
 
+cath2.innerText = catnumid

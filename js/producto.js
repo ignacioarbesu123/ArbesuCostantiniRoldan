@@ -1,9 +1,22 @@
 let main = document.querySelector("#main")
+let inpBuscar = document.querySelector(".inpBuscar")
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString)
 let numid = queryStringObj.get("id")
 let url = "https://dummyjson.com/products/"+numid
-console.log(location.href)
+let buscador = document.querySelector(".buscador")
+
+
+buscador.addEventListener('submit', function(event){
+    event.preventDefault();
+    if (inpBuscar.value == ""){
+        alert("El campo de busqueda no puede estar vacio")
+    }else if(inpBuscar.value == "" || inpBuscar.value.length < 3) {
+        alert("Tenés que escribir algo con al menos 3 caracteres")
+    }else{
+        this.submit()
+    }
+});
 
 fetch(url)
     .then(function (response) {
@@ -36,7 +49,8 @@ fetch(url)
         <p>${data.brand}</p>
         <p>${data.description}</p>
         <p>${data.price}</p>
-        <img class="nombredelproducto" src="${data.images[0]}" alt="${data.title}">
+        <img class="n
+        ombredelproducto" src="${data.images[0]}" alt="${data.title}">
         <a href="./category.html?name=${data.category}">
          ${data.category}
         </a>
