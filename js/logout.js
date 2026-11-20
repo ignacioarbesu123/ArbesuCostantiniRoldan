@@ -7,7 +7,6 @@ let dos_liLogin = document.querySelector(".liLogin")
 alogout.addEventListener("click",function(event){
     event.preventDefault()
     localStorage.removeItem("usuario")
-    localStorage.removeItem("email")
     dos_liSaludo.style.display = "none"
     dos_liLogout.style.display = "none"
     dos_liLogin.style.display = "block";

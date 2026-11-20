@@ -21,11 +21,11 @@ fetch(urlBusqueda)
         for (let i = 0; i < resultados.length; i++) {
                 seccionResultados.innerHTML += `
                     <article>
-                        <img src="${resultados[i].thumbnail}" alt="${resultados[i].title}">
+                        <img class="imgproducto" src="${resultados[i].thumbnail}" alt="${resultados[i].title}">
                         <h3>${resultados[i].title}</h3>
                         <p>${resultados[i].description}</p>
                         <p>$${resultados[i].price}</p>
-                        <a href="./product.html?id=${resultados[i].id}" class="botondetalle">Ver detalle</a>
+                        <a href="./producto.html?id=${resultados[i].id}" class="botondetalle">Ver detalle</a>
                     </article>
                 `;
             }

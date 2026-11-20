@@ -36,7 +36,7 @@ fetch(url)
         <p>${data.brand}</p>
         <p>${data.description}</p>
         <p>${data.price}</p>
-        <img class="nombredelproducto" src="${data.images[0]}" alt="foto producto mas vendido 1">
+        <img class="nombredelproducto" src="${data.images[0]}" alt="${data.title}">
         <a href="./category.html?name=${data.category}">
          ${data.category}
         </a>

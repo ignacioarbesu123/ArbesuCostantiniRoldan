@@ -16,7 +16,7 @@ fetch(apiurlcategory)
     for (let i = 0; i < cat.length; i++) {
         relleno +=
         `<article>
-            <img src="${cat[i].images[0]}" alt="foto producto 1">
+            <img class="imgproducto" src="${cat[i].images[0]}" alt="${cat[i].title}">
             <h3>${cat[i].title}</h3>
             <h4>${cat[i].description}</h4>
             <h5>${cat[i].price}</h5>

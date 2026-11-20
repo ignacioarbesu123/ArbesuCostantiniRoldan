@@ -31,7 +31,7 @@ fetch(urlGroceries)
         for (let i = 0; i < productosGroceries.length; i++) {
             seccionGroceries.innerHTML += `
             <article>
-                    <img src="${productosGroceries[i].thumbnail}" alt="${productosGroceries[i].title}">
+                    <img class="imgproducto" src="${productosGroceries[i].thumbnail}" alt="${productosGroceries[i].title}">
                     <h3>${productosGroceries[i].title}</h3>
                     <p>${productosGroceries[i].description}</p>
                     <p>$${productosGroceries[i].price}</p>
