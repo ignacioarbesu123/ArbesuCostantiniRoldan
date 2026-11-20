@@ -58,7 +58,7 @@ fetch(urlSmartphones)
         for (let i = 0; i < productosSmartphones.length; i++) {
             seccionSmartphones.innerHTML += `
             <article>
-                    <img src="${productosSmartphones[i].thumbnail}" alt="${productosSmartphones[i].title}">
+                    <img class="imgproducto" src="${productosSmartphones[i].thumbnail}" alt="${productosSmartphones[i].title}">
                     <h3>${productosSmartphones[i].title}</h3>
                     <p>${productosSmartphones[i].description}</p>
                     <p>$${productosSmartphones[i].price}</p>

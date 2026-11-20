@@ -126,10 +126,11 @@ article img {
     display: flex;
     background-color: #0F172A;
     color: white;
-    padding: 15px 15px;
+    padding: 10px 10px;
     font-weight: 500;
-    width: 130px;
+    width: 110px;
     justify-content: center;
+    border-radius: 15px;
 }
 
 footer {
@@ -209,6 +210,10 @@ section.cform {
     display: flex;
     justify-content: center;
     margin: 80px;
+}
+
+.imgproducto {
+    height: 270px;
 }
 
 /* reglas para producto*/
