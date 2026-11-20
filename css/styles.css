@@ -35,6 +35,7 @@ header {
     border-bottom-style: solid;
 }
 
+
 header nav a {
     color: #ffffff;
     background-color: #1f2351;
@@ -48,8 +49,8 @@ header nav a {
 
 .loginregister ul {
     display: flex;
-    justify-content: space-between;
-    width: 250px;
+    justify-content: space-around;
+    width: 500px;
 }
 
 .buscador {
