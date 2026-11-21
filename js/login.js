@@ -2,16 +2,16 @@ let loginForm = document.querySelector(".login")
 let campoContraseña = document.querySelector("#contraseña")
 let campoEmail = document.querySelector("#mail")
 
-loginForm.addEventListener('submit', function (event){
+loginForm.addEventListener('submit', function (event) {
     event.preventDefault();
-    if(campoEmail.value == ""){
+    if (campoEmail.value == "") {
         alert("tenés que completar el email");
-    }else if(campoContraseña.value.length < 6 && campoContraseña.value.length > 0){
+    } else if (campoContraseña.value.length < 6 && campoContraseña.value.length > 0) {
         alert("la contraseña tiene que tener al menos 6 caracteres");
-    }else if (campoContraseña.value == "") {
+    } else if (campoContraseña.value == "") {
         alert("Tenés que completar la contraseña");
-    }else{
-         let usuarioLogin = {
+    } else {
+        let usuarioLogin = {
             email: campoEmail.value,
             contraseña: campoContraseña.value
         }
@@ -19,17 +19,17 @@ loginForm.addEventListener('submit', function (event){
         localStorage.setItem("usuario", usuarioString)
         this.submit();
     }
-} )
+})
 
 let inpBuscar = document.querySelector(".inpBuscar")
 
-buscador.addEventListener('submit', function(event){
+buscador.addEventListener('submit', function (event) {
     event.preventDefault();
-    if (inpBuscar.value == ""){
+    if (inpBuscar.value == "") {
         alert("El campo de busqueda no puede estar vacio")
-    }else if(inpBuscar.value == "" || inpBuscar.value.length < 3) {
+    } else if (inpBuscar.value == "" || inpBuscar.value.length < 3) {
         alert("Tenés que escribir algo con al menos 3 caracteres")
-    }else{
+    } else {
         this.submit()
     }
 });

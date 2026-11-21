@@ -3,17 +3,17 @@ let inpBuscar = document.querySelector(".inpBuscar")
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString)
 let numid = queryStringObj.get("id")
-let url = "https://dummyjson.com/products/"+numid
+let url = "https://dummyjson.com/products/" + numid
 let buscador = document.querySelector(".buscador")
 
 
-buscador.addEventListener('submit', function(event){
+buscador.addEventListener('submit', function (event) {
     event.preventDefault();
-    if (inpBuscar.value == ""){
+    if (inpBuscar.value == "") {
         alert("El campo de busqueda no puede estar vacio")
-    }else if(inpBuscar.value == "" || inpBuscar.value.length < 3) {
+    } else if (inpBuscar.value == "" || inpBuscar.value.length < 3) {
         alert("Tenés que escribir algo con al menos 3 caracteres")
-    }else{
+    } else {
         this.submit()
     }
 });
@@ -26,22 +26,22 @@ fetch(url)
         console.log(data)
         let tagis = ""
         for (let i = 0; i < data.tags.length; i++) {
-            
+
             tagis +=
-            `<li>${data.tags[i]}</li>`
-            
+                `<li>${data.tags[i]}</li>`
+
         }
         let reseñas = ""
         for (let i = 0; i < data.reviews.length; i++) {
             reseñas +=
-            `<article>
+                `<article>
                         <p>${data.reviews[i].rating}</p>
                         <p>${data.reviews[i].comment}</p>
                         <p>${data.reviews[i].date}</p>
                         <p>${data.reviews[i].reviewerName}</p>
             </article>`
 
-            
+
         }
         main.innerHTML = `
   <section class="imagen">

@@ -6,26 +6,26 @@ let seccionSmartphones = document.querySelector(".seccionSmartphones")
 let urlSmartphones = "https://dummyjson.com/products/category/smartphones";
 
 //validador de caracteres del buscador
-buscador.addEventListener('submit', function(event){
+buscador.addEventListener('submit', function (event) {
     event.preventDefault();
-    if (inpBuscar.value == ""){
+    if (inpBuscar.value == "") {
         alert("El campo de busqueda no puede estar vacio")
-    }else if(inpBuscar.value == "" || inpBuscar.value.length < 3) {
+    } else if (inpBuscar.value == "" || inpBuscar.value.length < 3) {
         alert("Tenés que escribir algo con al menos 3 caracteres")
-    }else{
+    } else {
         this.submit()
     }
 });
 
 // seccion 1 del home: groceries
-let seccionGroceries = document.querySelector(".seccionGroceries"); 
+let seccionGroceries = document.querySelector(".seccionGroceries");
 let urlGroceries = "https://dummyjson.com/products/category/groceries";
 
 fetch(urlGroceries)
-    .then(function (res){
+    .then(function (res) {
         return res.json();
-    }) 
-    .then(function(data) {
+    })
+    .then(function (data) {
         let productosGroceries = data.products;
 
         for (let i = 0; i < productosGroceries.length; i++) {
@@ -39,9 +39,9 @@ fetch(urlGroceries)
                 </article>
 
             `;
-            }
-        }) 
-        .catch(function (e) {
+        }
+    })
+    .catch(function (e) {
         console.log("error: " + e);
     });
 
@@ -49,10 +49,10 @@ fetch(urlGroceries)
 // seccion 2 del home: smartphones
 
 fetch(urlSmartphones)
-.then(function (res){
+    .then(function (res) {
         return res.json();
-    }) 
- .then(function(data) {
+    })
+    .then(function (data) {
         let productosSmartphones = data.products;
 
         for (let i = 0; i < productosSmartphones.length; i++) {
@@ -65,8 +65,8 @@ fetch(urlSmartphones)
                     <a href="./producto.html?id=${productosSmartphones[i].id}" class="botondetalle">Ver detalle</a>
                 </article>
             `;
-            }
-        }) 
-        .catch(function (e) {
+        }
+    })
+    .catch(function (e) {
         console.log("error: " + e);
     });

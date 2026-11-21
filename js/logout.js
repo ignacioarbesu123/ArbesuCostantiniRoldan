@@ -4,7 +4,7 @@ let dos_liLogout = document.querySelector(".liLogout")
 let dos_liRegister = document.querySelector(".liRegister")
 let dos_liLogin = document.querySelector(".liLogin")
 
-alogout.addEventListener("click",function(event){
+alogout.addEventListener("click", function (event) {
     event.preventDefault()
     localStorage.removeItem("usuario")
     dos_liSaludo.style.display = "none"

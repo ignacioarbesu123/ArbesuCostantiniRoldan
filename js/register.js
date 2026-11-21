@@ -3,28 +3,28 @@ let campEmail = document.querySelector("#mail")
 let campContraseña = document.querySelector("#contraseña")
 let repContraseña = document.querySelector("#repetir-contraseña")
 
-formRegister.addEventListener("submit", function(event){
+formRegister.addEventListener("submit", function (event) {
     event.preventDefault();
-    if(campEmail.value == ""){
+    if (campEmail.value == "") {
         alert("Tenés que completar el Email")
-    }else if(campContraseña.value.length < 6 || campContraseña.value.length == 0){
+    } else if (campContraseña.value.length < 6 || campContraseña.value.length == 0) {
         alert("Tu contraseña debe tener al menos 6 caracteres")
-    }else if(campContraseña.value != repContraseña.value){
+    } else if (campContraseña.value != repContraseña.value) {
         alert("Las contraseñas no coinciden")
-    }else{
+    } else {
         this.submit()
     }
 })
 
 let inpBuscar = document.querySelector(".inpBuscar")
 
-buscador.addEventListener('submit', function(event){
+buscador.addEventListener('submit', function (event) {
     event.preventDefault();
-    if (inpBuscar.value == ""){
+    if (inpBuscar.value == "") {
         alert("El campo de busqueda no puede estar vacio")
-    }else if(inpBuscar.value == "" || inpBuscar.value.length < 3) {
+    } else if (inpBuscar.value == "" || inpBuscar.value.length < 3) {
         alert("Tenés que escribir algo con al menos 3 caracteres")
-    }else{
+    } else {
         this.submit()
     }
 });

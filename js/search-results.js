@@ -7,13 +7,13 @@ let urlBusqueda = "https://dummyjson.com/products/search?q=" + terminoBuscado;
 let buscador = document.querySelector(".buscador")
 let inpBuscar = document.querySelector(".inpBuscar")
 
-buscador.addEventListener('submit', function(event){
+buscador.addEventListener('submit', function (event) {
     event.preventDefault();
-    if (inpBuscar.value == ""){
+    if (inpBuscar.value == "") {
         alert("El campo de busqueda no puede estar vacio")
-    }else if(inpBuscar.value == "" || inpBuscar.value.length < 3) {
+    } else if (inpBuscar.value == "" || inpBuscar.value.length < 3) {
         alert("Tenés que escribir algo con al menos 3 caracteres")
-    }else{
+    } else {
         this.submit()
     }
 });
@@ -30,7 +30,7 @@ fetch(urlBusqueda)
         } else {
             tituloBusqueda.innerText = "Resultados de busqueda para: " + terminoBuscado;
 
-        for (let i = 0; i < resultados.length; i++) {
+            for (let i = 0; i < resultados.length; i++) {
                 seccionResultados.innerHTML += `
                     <article>
                         <img class="imgproducto" src="${resultados[i].thumbnail}" alt="${resultados[i].title}">
@@ -42,7 +42,7 @@ fetch(urlBusqueda)
                 `;
             }
         }
-    }) 
-   .catch(function (e) {
+    })
+    .catch(function (e) {
         console.log("error: " + e);
     }); 

@@ -11,7 +11,7 @@ if (usuarioRecuperado != null) {
     liLogin.style.display = "none";
     liRegister.style.display = "none";
 
-} else { 
+} else {
     liSaludo.style.display = "none"
     liLogout.style.display = "none"
 }
