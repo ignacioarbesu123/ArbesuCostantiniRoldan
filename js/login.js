@@ -20,3 +20,16 @@ loginForm.addEventListener('submit', function (event){
         this.submit();
     }
 } )
+
+let inpBuscar = document.querySelector(".inpBuscar")
+
+buscador.addEventListener('submit', function(event){
+    event.preventDefault();
+    if (inpBuscar.value == ""){
+        alert("El campo de busqueda no puede estar vacio")
+    }else if(inpBuscar.value == "" || inpBuscar.value.length < 3) {
+        alert("Tenés que escribir algo con al menos 3 caracteres")
+    }else{
+        this.submit()
+    }
+});
